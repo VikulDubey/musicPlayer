@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="musicPlayer">
+            <div class="nav">
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="./ram aayege.jpg" alt="music thumbnail" width="100">
+            <h3>Ram Aayege</h3>
+            <p>Swati</p>
+            <audio controls class="audioTrack">
+                <source src="./Ram Aayenge - Swati.mp3" type="audio/mpeg">
+            </audio>
+            <div class="timeLine">
+                <input type="range" name="range" id="trackTimeLine">
+                <div class="timeCounter">
+                    <p>0:0</p>
+                    <i class="fa-solid fa-rotate-left loopButton"></i>
+                    <p>0:0</p>
+                </div>
+            </div>
+            <div class="controlPannel">
+                <i class="fa-solid fa-backward" title="previous"></i>
+                <i class="fa-solid fa-play" id="play"></i>
+                <i class="fa-solid fa-forward" title="next"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f84b24b31a.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
